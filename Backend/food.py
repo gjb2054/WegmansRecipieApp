@@ -4,12 +4,10 @@ class Food:
     location = "Wegmans"
 
     #instance attrib
-    def __init__(self, name, price):
+    def __init__(self, nutrition, price, name):
         self.name = name
         self.price = price
+        self.nutrition = nutrition
 
     def description(self):
         return "Food: " + self.name + " with price: " + self.price
-
-    def set_price(self, new_price):
-        self.price = new_price
